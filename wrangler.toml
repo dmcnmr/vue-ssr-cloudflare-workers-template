@@ -1,0 +1,10 @@
+name = "experimental-dev-challenge"
+type = "webpack"
+# zone_id = ""
+account_id = "............"
+# route = ""
+webpack_config = "./wrangler.config.js"
+workers_dev = true
+
+# [site]
+# bucket = "./dist/client"
