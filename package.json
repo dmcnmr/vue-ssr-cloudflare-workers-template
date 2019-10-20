@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build:client": "cross-env NODE_ENV=production webpack --config ./client.config.js",
     "serve": "vue-cli-service serve",
-    "preview": "wrangler preview",
-    "publish": "webpack --config ./client.config.js && wrangler publish",
+    "preview": "npm run build:client && cross-env NODE_ENV=production wrangler preview",
+    "publish": "npm run build:client && cross-env NODE_ENV=production wrangler publish",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "@vue/cli-service": "^4.0.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.1",
+    "cross-env": "^6.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
