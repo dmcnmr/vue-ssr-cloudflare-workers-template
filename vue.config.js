@@ -4,6 +4,6 @@ module.exports = {
     extract: true
   },
   configureWebpack: {
-    entry: './src/entry-client.js',
+    entry: './src/entry-client.js'
   }
 }

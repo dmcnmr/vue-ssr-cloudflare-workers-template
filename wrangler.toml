@@ -1,8 +1,9 @@
-# account_id = ""
+account_id = "$yourAccountId"
 name = "experimental-dev-challenge"
 type = "webpack"
 webpack_config = "./worker.config.js"
 workers_dev = true
 
-# [site]
-# bucket = "./dist/client"
+[site]
+bucket = "./dist/client"
+entry-point = "./"
