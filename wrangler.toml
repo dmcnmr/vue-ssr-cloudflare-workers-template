@@ -1,4 +1,4 @@
-account_id = "$yourAccountId"
+account_id = "YOUR_ACCOUNT_ID"
 name = "experimental-dev-challenge"
 type = "webpack"
 webpack_config = "./worker.config.js"
