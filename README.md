@@ -1,4 +1,4 @@
-# experimental-dev-challenge
+# vue-cloudflare-workers
 
 Uses a modified `vue-server-renderer/basic.js`, for changes see this [commit](https://github.com/l5x/vue/commit/2a461f7ccd12fe0ee301a8123c6731e5e7ade3fa).
 
