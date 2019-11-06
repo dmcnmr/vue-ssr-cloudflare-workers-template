@@ -23,7 +23,7 @@ const renderer = createRenderer({
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="{{ test }}favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <title>experimental-dev-challenge</title>
     `
     const neck = `
@@ -55,30 +55,8 @@ const renderer = createRenderer({
 const render = async context => {
   const app = await createApp(context)
 
-  return renderer.renderToString(app, {})
+  return renderer.renderToString(app, context)
 }
-
-//
-// addEventListener('fetch', event => {
-//   event.respondWith(handleRequest(event.request))
-// })
-//
-// async function handleRequest(request) {
-//   const url = new URL(request.url)
-//
-//   const init = {
-//     status: 200,
-//     headers: {
-//       'content-type': 'text/html;charset=UTF-8'
-//     }
-//   }
-//
-//   const response = await render({ url: url.pathname })
-//
-//   return new Response(response, init)
-// }
-//
-// // render({ url: '/about' }).then(console.log)
 
 addEventListener('fetch', event => {
   try {

@@ -55,7 +55,10 @@ const config = merge.smart(baseConfig, {
       'process.env.VUE_ENV': JSON.stringify('server'),
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    new FilterJs()
+    new FilterJs(),
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1
+    })
   ],
   optimization: {
     runtimeChunk: false,
