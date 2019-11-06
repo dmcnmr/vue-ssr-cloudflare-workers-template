@@ -1,5 +1,5 @@
 account_id = "YOUR_ACCOUNT_ID"
-name = "experimental-dev-challenge"
+name = "vue-cloudflare-workers"
 type = "webpack"
 webpack_config = "./worker.config.js"
 workers_dev = true
