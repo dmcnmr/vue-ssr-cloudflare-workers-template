@@ -1,5 +1,5 @@
 account_id = "YOUR_ACCOUNT_ID"
-name = "vue-cloudflare-workers"
+name = "vue-ssr-cloudflare-workers"
 type = "webpack"
 webpack_config = "./worker.config.js"
 workers_dev = true
