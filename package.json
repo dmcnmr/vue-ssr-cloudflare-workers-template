@@ -2,11 +2,14 @@
   "name": "experimental-dev-challenge",
   "version": "0.1.0",
   "private": true,
+  "main": "./src/entry-worker.js",
   "scripts": {
-    "build:client": "rimraf ./dist && cross-env NODE_ENV=production webpack --config ./client.config.js",
+    "build:client": "rimraf ./dist/client && cross-env NODE_ENV=production webpack --config ./client.config.js",
+    "build:worker": "rimraf ./dist/worker && cross-env NODE_ENV=production webpack --config ./worker.config.js",
+    "build": "npm run build:client && npm run build:worker",
     "serve": "vue-cli-service serve",
-    "preview": "npm run build:client && cross-env NODE_ENV=production wrangler preview",
-    "publish": "npm run build:client && cross-env NODE_ENV=production wrangler publish",
+    "preview": "npm run build && cross-env NODE_ENV=production wrangler preview",
+    "publish": "npm run build && cross-env NODE_ENV=production wrangler publish",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

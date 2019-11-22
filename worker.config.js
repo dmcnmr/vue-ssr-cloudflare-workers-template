@@ -47,7 +47,7 @@ const config = merge.smart(baseConfig, {
   target: 'webworker',
   devtool: 'inline-cheap-module-source-map',
   output: {
-    path: path.resolve(__dirname, 'dist/server'),
+    path: path.resolve(__dirname, 'dist/worker'),
     filename: 'index.js'
   },
   plugins: [
